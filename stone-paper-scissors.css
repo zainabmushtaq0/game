@@ -1,0 +1,124 @@
+#title{
+      
+    height:70px;
+    width:100%;
+    background-color: rgb(40, 40, 77);
+    color:white;
+    text-align: center;
+    padding-top: 1px;
+}
+.container{
+    width:100%;
+    height:400px;
+    display:flex;
+    justify-content: center;
+    /* align-items: center; */
+    align-content: center;
+   /* flex-wrap: wrap; */
+   /* padding-left: 80px; */
+
+}
+#rock{
+    background-image: url("rock.jpg");
+    background-size: cover;
+    /* object-fit: cover; */
+}
+#paper{
+    background-image: url("paper.jpg");
+    background-size: cover;
+}
+#scissors{
+    background-image: url("scissors.jpg");
+    background-size: cover;
+}
+.option{
+    width:350px;
+    height:350px;
+    margin:20px;
+    border-radius: 50%;
+
+    
+}
+body{
+    background-color: rgb(239, 114, 181);
+}
+.mouseout{
+    border:0px transparent;
+    opacity:100%;
+}
+/*  scoreboard */
+/* ___________________________________________________________________________ */
+
+.scoreboard{
+    display:flex;
+    justify-content: center;
+    
+}
+.scorebox{
+
+    border:2px solid black;
+    width:250px;
+    height:100px;
+    font-size: x-large;
+    font-weight: 700;
+    font-family:monospace;
+    background-color: rgb(247, 167, 249);
+    margin:5px;
+    padding:5px;
+    margin-top: 50px;
+    text-align: center;
+
+}
+
+#user{
+  background-color: rgb(153, 252, 219);
+}
+#comp{
+    border:2px solid rgb(17, 17, 17);
+    background-color: rgb(162, 238, 250);
+   
+} 
+
+/* MESSAGE */   
+#msg{
+  text-align: center;
+  border: 2px solid white;
+  height:40px;
+  width:100%;
+  /* width:500px; */
+
+  /* width:200px; */
+  /* margin-left: 500px; */
+  padding-top: 20px;
+  margin-top:5px;
+  background-color: pink;
+  border-radius: 10px;
+  font-family: cursive;
+  font-weight: bold;
+  transition: 2s all ease-in;
+
+}
+
+@media(max-width:426px){
+
+    .option{
+        width:180px;
+        height:90px;
+        margin:10px;
+        border-radius: 50%;
+    
+        
+    }
+
+ .bigpaper{
+    width:300px;
+    height: 300px;
+    visibility: hidden;
+ }   
+.container{
+    
+    height:150px;
+   
+
+}
+}
